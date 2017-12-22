@@ -1,0 +1,28 @@
+{
+  "name": "sheetify-sibling",
+  "version": "1.0.0",
+  "description": "plugin add sibling class selector for sheetify",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZhouHansen/sheetify-sibling.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "周汉成",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZhouHansen/sheetify-sibling/issues"
+  },
+  "homepage": "https://github.com/ZhouHansen/sheetify-sibling#readme",
+  "dependencies": {
+    "css-sibling": "^1.0.0",
+    "style-resolve": "^1.0.1",
+    "tachyons-outlines": "^1.0.3",
+    "tape": "^4.8.0"
+  }
+}
