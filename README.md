@@ -2,7 +2,7 @@
  [![npm version][2]][3] [![downloads][4]][5]
  ![travis build][6]
 
-plugin add sibling class selector for sheetify
+A sheetify plugin add sibling class selector to any first level class selector.
 
 ## example
 
@@ -28,7 +28,7 @@ plugin add sibling class selector for sheetify
 const browserify = require('browserify')
 
 browserify()
- .transform('sheetify/transform', { use: [
+ .transform('sheetify', { use: [
    [ 'sheetify-sibling', {'somecsslib': 'sibling'} ]
  ] })
  .bundle()
@@ -52,18 +52,13 @@ browserify()
 
 ## usage
 
-### shell
-
-```sh
-$ browserify entry.js -t [ sheetify/transform -u [ [ 'sheetify-sibling', {'moduleName': 'siblingName'} ] ] ]
-```
-
 ### javascript
 ```js
 const browserify = require('browserify')
 
 browserify()
- .transform('sheetify/transform', { use: [ 'sheetify-sibling', {
+ .transform('sheetify', { use: [ 'sheetify-sibling', {
+   // cssModuleName: siblingName
    'tachyons-flexbox': 'tachyons',
    'tachyons-skins': 'tachyons'
  } ] })
