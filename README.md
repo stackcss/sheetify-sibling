@@ -3,11 +3,31 @@
  ![travis build][6]
 
 A sheetify plugin add sibling class selector to any first level class selector.
+Only apply on global css module in *node_modules/*
+
+## why
+Recently I developed a website without tachyons, afterwards I used it on a new component. Tachyons conflicted with my old code. I could solve conflict if used tachyons with an additional identify class 'tachyons' like semantic-ui's 'ui', then sheetify-sibling born.
+
+```html
+<!-- semantic-ui -->
+<div class="ui four column doubling stackable grid container">
+  <div class="column">
+    <p></p>
+    <p></p>
+  </div>
+</div>
+
+<!--
+  tachyons: I'd like to have a identify class too
+  sheetify-sibling: you will be..
+-->
+<p class=" tachyonspa1 fs-normal center cf"></p>
+```
 
 ## example
 
 ```css
-/* somecsslib */
+/* a global css module */
 .a{
   color: red
 }
@@ -58,7 +78,7 @@ const browserify = require('browserify')
 
 browserify()
  .transform('sheetify', { use: [ 'sheetify-sibling', {
-   // cssModuleName: siblingName
+   // globalCssModuleName: siblingName
    'tachyons-flexbox': 'tachyons',
    'tachyons-skins': 'tachyons'
  } ] })

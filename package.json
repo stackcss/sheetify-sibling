@@ -1,7 +1,7 @@
 {
   "name": "sheetify-sibling",
   "version": "1.0.0",
-  "description": "plugin add sibling class selector for sheetify",
+  "description": "A sheetify plugin add sibling class selector to any first level class selector.",
   "main": "index.js",
   "scripts": {
     "test": "tape test.js"
