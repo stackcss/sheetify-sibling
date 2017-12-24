@@ -2,11 +2,12 @@
  [![npm version][2]][3] [![downloads][4]][5]
  ![travis build][6]
 
-A sheetify plugin add sibling class selector to any first level class selector.
-Only apply on global css module in *node_modules/*
+A sheetify plugin add sibling class to any *firstLevel* class selector.
+
+Apply on global css module in *node_modules/* only.
 
 ## why
-Recently I developed a website without tachyons, afterwards I used it on a new component. Tachyons conflicted with my old code. I could solve conflict if used tachyons with an additional identify class 'tachyons' like semantic-ui's 'ui', then sheetify-sibling born.
+Recently I dev a website without tachyons, after I used it on a new component. Tachyons conflicted with my old code. I can solve this if I can use tachyons with an additional identify class 'tachyons' like semantic-ui's 'ui', then sheetify-sibling born.
 
 ```html
 <!-- semantic-ui -->
@@ -19,9 +20,9 @@ Recently I developed a website without tachyons, afterwards I used it on a new c
 
 <!--
   tachyons: I'd like to have a identify class too
-  sheetify-sibling: you will be..
+  sheetify-sibling: you will..
 -->
-<p class=" tachyonspa1 fs-normal center cf"></p>
+<p class="tachyons pa1 fs-normal center cf"></p>
 ```
 
 ## example
