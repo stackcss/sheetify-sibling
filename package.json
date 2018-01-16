@@ -1,6 +1,6 @@
 {
   "name": "sheetify-sibling",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A sheetify plugin add sibling class selector to any first level class selector.",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/ZhouHansen/sheetify-sibling#readme",
   "dependencies": {
-    "css-sibling": "^1.0.0",
+    "css-sibling": "^1.0.1",
     "style-resolve": "^1.0.1",
     "tachyons-outlines": "^1.0.3",
     "tape": "^4.8.0"
